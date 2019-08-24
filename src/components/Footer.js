@@ -1,13 +1,13 @@
 /** @jsx jsx */
-import { jsx, Footer, Container } from "theme-ui"
-import { Link } from "gatsby"
+import { jsx, Footer, Flex, Container } from "theme-ui"
+import {FiTwitter, FiInstagram, FiLinkedin} from "react-icons/fi"
 
 export default () => (
   <Footer>
     <Container>
-      <footer
+      <hr />
+      <Flex
         sx={{
-          display: "flex",
           flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "center",
@@ -15,16 +15,20 @@ export default () => (
           variant: "styles.footer",
         }}
       >
-        <Link to="/" sx={{ variant: "styles.navlink", p: 2 }}>
-          Home
-        </Link>
-        <Link to="/" sx={{ variant: "styles.navlink", p: 2 }}>
-          Blog
-        </Link>
-        <Link to="/" sx={{ variant: "styles.navlink", p: 2 }}>
-          About
-        </Link>
-      </footer>
+        <a sx={{variant: "styles.navlink", fontSize: 4, mx:2}} href="https://twitter.com/justandydesign1" title="Just Andy Twitter Page" target="_blank" rel="noopener noreferrer">
+          <FiTwitter/>
+        </a>
+        <a sx={{variant: "styles.navlink", fontSize: 4, mx:2}} href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <FiInstagram/>
+        </a>
+        <a sx={{variant: "styles.navlink", fontSize: 4, mx:2}} href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <FiLinkedin/>
+        </a>
+      </Flex>
+      <Flex sx={{color: "text", fontSize:1, alignItems: "center",
+          justifyContent: "center",}}>
+        &copy; 2019 Andrew Cetnarskyj
+      </Flex>
     </Container>
   </Footer>
 )
