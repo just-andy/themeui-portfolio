@@ -42,8 +42,7 @@ export default () => (
           <Link
             to="/"
             sx={{
-              variant: "styles.navlink",
-              p: 2,
+              variant: "styles.hollow",
             }}
           >
             Work
@@ -51,8 +50,7 @@ export default () => (
           <Link
             to="/blog"
             sx={{
-              variant: "styles.navlink",
-              p: 2,
+              variant: "styles.hollow",
             }}
           >
             Blog
@@ -60,8 +58,7 @@ export default () => (
           <Link
             to="/about"
             sx={{
-              variant: "styles.navlink",
-              p: 2,
+              variant: "styles.hollow",
             }}
           >
             About

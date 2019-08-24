@@ -2,8 +2,16 @@
 import { jsx } from "theme-ui"
 import Layout from "../components/Layout"
 
+import Grid from "../components/elements/Grid"
+import Card from "../components/elements/Card"
+
 export default () => (
   <Layout>
+    <div sx={{fontFamily:"heading", fontSize:[6,8], textAlign:["left", "center"]}}>
+      I make things online
+    </div>
+
+    <div>
     <h1>Heading 1</h1>
     <p>
       Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -12,17 +20,14 @@ export default () => (
       also the leap into electronic typesetting, remaining essentially
       unchanged.
     </p>
-    <h2>Heading 2</h2>
-    <p>
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
-    </p>
-    <h3>Heading 3</h3>
-    <p>
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
-    </p>
+    </div>
+    <h2>Case Studies</h2>
+    <Grid>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+  
+    </Grid>
   </Layout>
 )
