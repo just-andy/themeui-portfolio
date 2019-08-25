@@ -27,7 +27,7 @@ export default () => (
       </Flex>
       <Flex sx={{color: "text", fontSize:1, alignItems: "center",
           justifyContent: "center",}}>
-        &copy; 2019 Andrew Cetnarskyj
+        &copy; 2019 Andrew Cetnarskyj &middot; * Auld Reekie = Edinburgh
       </Flex>
     </Container>
   </Footer>

@@ -1,16 +1,17 @@
 // example base theme from @theme-ui/presets
 const heading = {
-  fontFamily: "heading",
-  lineHeight: "heading",
-  fontWeight: "heading",
+  fontFamily: "body",
+  lineHeight: "body",
+  fontWeight: "body",
+  mt: 0
 }
 
 export default {
   breakpoints: ["40em", "52em", "64em", "85.375em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body: "Arial, sans-serif",
-    heading: "'Anton', sans-serif",
+    body: "'Work Sans', Arial, sans-serif",
+    heading: "'Work Sans', sans-serif",
     monospace: "Menlo, monospace",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96, 124],
@@ -25,15 +26,11 @@ export default {
   },
   colors: {
     text: "#111",
-    background: "#ebebeb",
+    background: "#fff",
     primary: "tomato",
     secondary: "#30c",
     accent: "aqua",
-    muted: "#f6f6f6",
-  },
-  // Needs fixed
-  shadows: {
-    card: '0 0 4px rgba(0, 0, 0, 0.125)',
+    muted: "#f7f8fc",
   },
   styles: {
     root: {
@@ -50,6 +47,10 @@ export default {
     Container: {
       p: [2, 3],
       my: [0, 2]
+    },
+    Main: {
+      fontSize: [1, 2],
+      lineHeight: "body"
     },
     Footer: {
       my: 2
@@ -78,15 +79,26 @@ export default {
       ...heading,
       fontSize: 0,
     },
-    headline: {
-      ...heading,
-      fontSize: [8,9]
-    },
     pre: {
       fontFamily: "monospace",
       overflowX: "auto",
       code: {
         color: "inherit",
+      },
+    },
+    // Buttons
+    buttons: {
+      primary: {
+        color: 'background',
+        bg: 'primary',
+      },
+      secondary: {
+        color: 'background',
+        bg: 'secondary',
+      },
+      gray: {
+        color: 'background',
+        bg: 'muted',
       },
     },
     navlink: {
@@ -102,7 +114,7 @@ export default {
       borderWidth: "2px",
       borderStyle: "solid",
       borderColor: "primary",
-      borderRadius: "0.25em",
+      borderRadius: "1em",
       py: 1,
       px: [3 ,4 , 5],
       m: 1,

@@ -5,14 +5,9 @@ import { Link } from "gatsby"
 import Logo from "../images/logo-black-circle.svg"
 
 export default () => (
-  <Header>
-    <Container>
-      <header
-        sx={{
-          py: 4,
-          variant: "styles.header",
-        }}
-      >
+       <Header>
+         <Container>
+
         <Flex
           sx={{
             justifyContent: "center",
@@ -61,10 +56,10 @@ export default () => (
               variant: "styles.hollow",
             }}
           >
-            About
+            Profile
           </Link>
         </Flex>
-      </header>
+    
     </Container>
   </Header>
 )

@@ -21,7 +21,7 @@ export default props => (
         <Global />
         <Header />
         <Main>
-          <Container>{props.children}</Container>
+          {props.children}
         </Main>
         <Footer />
       </Layout>

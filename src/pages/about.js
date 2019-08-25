@@ -1,9 +1,18 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Flex, Container } from "theme-ui"
 import Layout from "../components/Layout"
+
+import Profile from "../images/profile.jpg"
+import Button from "../components/elements/Button"
 
 export default () => (
   <Layout>
+<Container>
+  <Flex sx={{alignItems:"center", my: 2, }} >
+    <img src={Profile} alt="Andrew Cetnarskyj and family" />
+    </Flex>
+
+
     <h1>About Andy</h1>
     <p>
       Please feel free to explore and find out what I’ve done for businesses big
@@ -28,5 +37,7 @@ export default () => (
       I’m always up for a challenge and am happy to discuss any opportunities or
       projects – so let’s talk.
     </p>
+    <Button sx={{variant: "buttons.primary"}}>View CV</Button>
+  </Container>
   </Layout>
 )

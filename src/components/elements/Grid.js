@@ -4,7 +4,7 @@ export default props => (
   <div
     sx={{
       display: "grid",
-      gridGap: 2, // theme.space[4]
+      gridGap: [3,4], // theme.space[4]
       // use arrays for mobile-first responsive styles
       gridTemplateColumns: [
         "auto", // default to a stacked layout on small screens
