@@ -6,12 +6,11 @@ import Logo from "../images/logo-black-circle.svg"
 
 export default () => (
        <Header>
-         <Container>
+         <Container sx={{pb:0}}>
 
         <Flex
           sx={{
             justifyContent: "center",
-            mb: 3,
           }}
         >
           <Link to="/" title="Home">

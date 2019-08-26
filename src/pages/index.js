@@ -22,7 +22,7 @@ export default () => (
     </Grid>
 </Container>
 
-    <article sx={{bg: "muted"}}>
+    <article>
       <Container>
         <header>
           <h2>A bit more about me</h2>

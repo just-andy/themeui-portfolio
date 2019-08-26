@@ -12,7 +12,7 @@ const Card = () => (
   >
     <div sx={{ backgroundColor: "#ccc", height: 200 }}>Image</div>
     <div sx={{p:[2,3]}}>
-      <Styled.h3><Link to="/">Card Title</Link></Styled.h3>
+      <Styled.h3><Link to="/" sx={{variant: "styles.navlink"}}>Card Title</Link></Styled.h3>
       <p>lorem impsum</p>
       <footer sx={{ mt: 2, fontSize: 2 }}>
         <Link to="/" sx={{variant: "styles.navlink"}}>View Article</Link>

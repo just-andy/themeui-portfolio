@@ -26,9 +26,9 @@ export default {
   },
   colors: {
     text: "#111",
-    background: "#fff",
-    primary: "tomato",
-    secondary: "#30c",
+    background: "#fbfbfb",
+    primary: "#79e789",
+    secondary: "#222",
     accent: "aqua",
     muted: "#f7f8fc",
   },
@@ -37,23 +37,11 @@ export default {
       fontFamily: "body",
       lineHeight: "body",
       fontWeight: "body",
-      p: 0,
-      m: 0,
       bg: "background"
     },
-    Header: {
-      m: 0
-    },
-    Container: {
-      p: [2, 3],
-      my: [0, 2]
-    },
     Main: {
-      fontSize: [1, 2],
+      fontSize: [2, 3],
       lineHeight: "body"
-    },
-    Footer: {
-      my: 2
     },
     h1: {
       ...heading,
