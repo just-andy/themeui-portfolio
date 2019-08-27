@@ -11,8 +11,8 @@ export default () => (
           flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "center",
-          p: 2,
           variant: "styles.footer",
+          py:3
         }}
       >
         <a sx={{variant: "styles.navlink", fontSize: 4, mx:2}} href="https://twitter.com/justandydesign1" title="Just Andy Twitter Page" target="_blank" rel="noopener noreferrer">
@@ -27,7 +27,7 @@ export default () => (
       </Flex>
       <Flex sx={{color: "text", fontSize:1, alignItems: "center",
           justifyContent: "center",}}>
-        &copy; 2019 Andrew Cetnarskyj
+        &copy; 2019 Andrew Cetnarskyj &middot; * Auld Reekie = Edinburgh
       </Flex>
     </Container>
   </Footer>
