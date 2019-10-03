@@ -3,7 +3,7 @@ const heading = {
   fontFamily: "body",
   lineHeight: "body",
   fontWeight: "body",
-  mt: 0
+  mt: 0,
 }
 
 export default {
@@ -25,23 +25,25 @@ export default {
     heading: 1.125,
   },
   colors: {
-    text: "#111",
-    background: "#fbfbfb",
-    primary: "#79e789",
-    secondary: "#222",
-    accent: "aqua",
+    text: "#060606",
+    background: "#f4f7f6",
+    primary: "#1fb622",
+    secondary: "#cff0c5",
+    accent: "text",
     muted: "#f7f8fc",
+    dark: "text",
+    light: "white",
   },
   styles: {
     root: {
       fontFamily: "body",
       lineHeight: "body",
       fontWeight: "body",
-      bg: "background"
+      bg: "background",
     },
     Main: {
       fontSize: [2, 3],
-      lineHeight: "body"
+      lineHeight: "body",
     },
     h1: {
       ...heading,
@@ -77,23 +79,23 @@ export default {
     // Buttons
     buttons: {
       primary: {
-        color: 'background',
-        bg: 'primary',
+        color: "light",
+        bg: "primary",
       },
       secondary: {
-        color: 'background',
-        bg: 'secondary',
+        color: "dark",
+        bg: "secondary",
       },
       gray: {
-        color: 'background',
-        bg: 'muted',
+        color: "background",
+        bg: "muted",
       },
     },
     navlink: {
       color: "primary",
       textDecoration: "none",
       ":hover": {
-        color: "secondary",
+        color: "text",
         textDecoration: "underline",
       },
     },
@@ -104,7 +106,7 @@ export default {
       borderColor: "primary",
       borderRadius: "1em",
       py: 1,
-      px: [3 ,4 , 5],
+      px: [3, 4, 5],
       m: 1,
       textDecoration: "none",
       ":hover": {
