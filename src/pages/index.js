@@ -4,23 +4,31 @@ import Layout from "../components/Layout"
 
 import Grid from "../components/elements/Grid"
 import Card from "../components/elements/Card"
-import Section from "../components/elements/Section"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 
 export default () => (
   <Layout>
     <Container>
-    <h1 sx={{fontFamily:"body", mx:[2,0], fontWeight: 400, fontSize:[5,6,7], lineHeight:1.25, textAlign: "center"}}>
-      Andy is a Senior Product Designer from Auld Reekie*
-    </h1>
+      <h1
+        sx={{
+          fontFamily: "body",
+          mx: [2, 0],
+          fontWeight: 400,
+          fontSize: [5, 6, 7],
+          lineHeight: 1.25,
+          textAlign: "center",
+        }}
+      >
+        Andy is a Senior Product Designer from Auld Reekie*
+      </h1>
 
-    <Grid>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </Grid>
-</Container>
+      <Grid>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Grid>
+    </Container>
 
     <article>
       <Container>
@@ -29,20 +37,35 @@ export default () => (
         </header>
         <div>
           <p>
-          Please feel free to explore and find out what I’ve done for businesses big and small – and what I could do for you too. I won’t bore you with personal stuff – this is all about the work. However, some kind of potted CV is in order. So here goes:</p>
+            Please feel free to explore and find out what I’ve done for
+            businesses big and small – and what I could do for you too. I won’t
+            bore you with personal stuff – this is all about the work. However,
+            some kind of potted CV is in order. So here goes:
+          </p>
 
-          <p>- I have over 16 years’ experience with a wide variety of online projects (including seven years in online gaming/sports/betting sector). You’ll find a snapshot of them here. </p>
+          <p>
+            - I have over 16 years’ experience with a wide variety of online
+            projects (including seven years in online gaming/sports/betting
+            sector). You’ll find a snapshot of them here.
+          </p>
 
-          <p>- I love problem-solving UX/customer challenges; preferably working alongside product and dev teams - although I’m more than happy to fly solo if need be.</p>
+          <p>
+            - I love problem-solving UX/customer challenges; preferably working
+            alongside product and dev teams - although I’m more than happy to
+            fly solo if need be.
+          </p>
 
-          <p>- I’m always up for a challenge and am happy to discuss any opportunities or projects – so let's talk.</p>
+          <p>
+            - I’m always up for a challenge and am happy to discuss any
+            opportunities or projects – so let's talk.
+          </p>
         </div>
         <footer>
-          <Link to="/about">View More</Link>
+          <Link to="/profile" sx={{ variant: "styles.navlink" }}>
+            A longer profile...
+          </Link>
         </footer>
-        </Container>
+      </Container>
     </article>
-
-
-</Layout>
+  </Layout>
 )
