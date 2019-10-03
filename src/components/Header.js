@@ -41,14 +41,6 @@ export default () => (
           Work
         </Link>
         <Link
-          to="/blog"
-          sx={{
-            variant: "styles.hollow",
-          }}
-        >
-          Blog
-        </Link>
-        <Link
           to="/profile"
           sx={{
             variant: "styles.hollow",
