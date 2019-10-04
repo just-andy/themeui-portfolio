@@ -30,6 +30,7 @@ export default () => (
       <Flex
         sx={{
           justifyContent: "center",
+          pt: [1, 2],
         }}
       >
         <Link

@@ -2,9 +2,25 @@
 import { jsx, Flex, Container, Box } from "theme-ui"
 import Layout from "../components/Layout"
 
-import Profile from "../images/profile.jpg"
 import SEO from "../components/Seo"
 import { FiFile } from "react-icons/fi"
+
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "images/profile.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 125, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default () => (
   <Layout>
@@ -14,7 +30,7 @@ export default () => (
     />
     <Container>
       <Flex sx={{ alignItems: "center", my: 2 }}>
-        <img src={Profile} alt="Andrew Cetnarskyj and family" />
+        <Img fixed={data.file.childImageSharp.fixed} />
       </Flex>
       <h1>About Andy</h1>
       <p>
