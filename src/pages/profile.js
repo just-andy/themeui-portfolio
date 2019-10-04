@@ -8,20 +8,6 @@ import { FiFile } from "react-icons/fi"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "images/profile.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(width: 125, height: 125) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`
-
 export default () => (
   <Layout>
     <SEO
@@ -29,9 +15,7 @@ export default () => (
       description="Andy has been around the digital block for a while and this is a bit of a potted history."
     />
     <Container>
-      <Flex sx={{ alignItems: "center", my: 2 }}>
-        <Img fixed={data.file.childImageSharp.fixed} />
-      </Flex>
+      <Flex sx={{ alignItems: "center", my: 2 }}></Flex>
       <h1>About Andy</h1>
       <p>
         Please feel free to explore and find out what I’ve done for businesses

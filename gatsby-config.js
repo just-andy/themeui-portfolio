@@ -7,15 +7,15 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    "gatsby-plugin-theme-ui",
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `images`),
+        path: `${__dirname}/src/images/`,
       },
     },
+    "gatsby-plugin-theme-ui",
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
