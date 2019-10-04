@@ -9,6 +9,14 @@ module.exports = {
   plugins: [
     "gatsby-plugin-theme-ui",
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-mdx`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "case_studies",
+        path: `${__dirname}/content/case_studies/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
