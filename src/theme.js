@@ -69,6 +69,14 @@ export default {
       ...heading,
       fontSize: 0,
     },
+    a: {
+      color: "primary",
+      textDecoration: "none",
+      ":hover": {
+        color: "text",
+        textDecoration: "underline",
+      },
+    },
     pre: {
       fontFamily: "monospace",
       overflowX: "auto",
