@@ -35,6 +35,7 @@ export default () => (
       >
         <Link
           to="/"
+          activeClassName='active'
           sx={{
             variant: "styles.hollow",
           }}
@@ -43,6 +44,7 @@ export default () => (
         </Link>
         <Link
           to="/profile"
+          activeClassName='active'
           sx={{
             variant: "styles.hollow",
           }}
