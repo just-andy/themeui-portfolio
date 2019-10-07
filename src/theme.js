@@ -105,9 +105,10 @@ export default {
       borderStyle: "solid",
       borderColor: "primary",
       borderRadius: "1em",
-      py: 1,
+      py: 2,
       px: [3, 4, 5],
       m: 1,
+      fontSize: [3, 4],
       textDecoration: "none",
       ":hover": {
         backgroundColor: "primary",

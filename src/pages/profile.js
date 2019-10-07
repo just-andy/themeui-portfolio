@@ -2,21 +2,29 @@
 import { jsx, Flex, Container, Box } from "theme-ui"
 import Layout from "../components/Layout"
 
-import Profile from "../images/profile.jpg"
 import SEO from "../components/Seo"
 import { FiFile } from "react-icons/fi"
 
-export default () => (
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+
+export default ({ data }) => (
   <Layout>
     <SEO
       title="About Andy Cetnarskyj"
       description="Andy has been around the digital block for a while and this is a bit of a potted history."
     />
     <Container>
-      <Flex sx={{ alignItems: "center", my: 2 }}>
-        <img src={Profile} alt="Andrew Cetnarskyj and family" />
-      </Flex>
+      <Flex sx={{ alignItems: "center", my: 2 }}></Flex>
       <h1>About Andy</h1>
+
+      <Img
+        fluid={data.file.childImageSharp.fluid}
+        sizes={{ ...data.file.childImageSharp.fluid, aspectRatio: 21 / 9 }}
+        alt="Family photo"
+        title="Photo"
+      />
+
       <p>
         Please feel free to explore and find out what I’ve done for businesses
         big and small – and what I could do for you too. I won’t bore you with
@@ -51,3 +59,15 @@ export default () => (
     </Container>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "profile-photo.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -13,6 +13,7 @@ export default () => (
         sx={{
           fontFamily: "body",
           mx: [2, 0],
+          mt: 0,
           fontWeight: 400,
           fontSize: [5, 6, 7],
           lineHeight: 1.25,
