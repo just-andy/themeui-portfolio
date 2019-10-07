@@ -8,7 +8,7 @@ import { FiFile } from "react-icons/fi"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default () => (
+export default ({ data }) => (
   <Layout>
     <SEO
       title="About Andy Cetnarskyj"
@@ -17,6 +17,14 @@ export default () => (
     <Container>
       <Flex sx={{ alignItems: "center", my: 2 }}></Flex>
       <h1>About Andy</h1>
+
+      <Img
+        fluid={data.file.childImageSharp.fluid}
+        sizes={{ ...data.file.childImageSharp.fluid, aspectRatio: 21 / 9 }}
+        alt="Family photo"
+        title="Photo"
+      />
+
       <p>
         Please feel free to explore and find out what I’ve done for businesses
         big and small – and what I could do for you too. I won’t bore you with
@@ -51,3 +59,15 @@ export default () => (
     </Container>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "profile-photo.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
