@@ -2,6 +2,8 @@
 import { jsx, Container } from "theme-ui"
 import Layout from "../components/Layout"
 
+import Studies from "../components/CaseStudies"
+
 import Grid from "../components/elements/Grid"
 import Card from "../components/elements/Card"
 import { Link } from "gatsby"
@@ -21,6 +23,9 @@ export default () => (
       >
         Andy is a Senior Product Designer from Auld Reekie*
       </h1>
+
+<h2>Studies</h2>
+      <Studies />
 
       <Grid>
         <Card />
