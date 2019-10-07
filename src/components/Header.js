@@ -49,6 +49,13 @@ export default () => (
         >
           Profile
         </Link>
+        <a
+          sx={{ variant: "styles.hollow" }}
+          href="/andrew-cetnarskyj-oct-19.pdf"
+          title="View the latest CV"
+        >
+          Resume
+        </a>
       </Flex>
     </Container>
   </Header>
