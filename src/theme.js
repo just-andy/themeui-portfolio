@@ -91,6 +91,13 @@ export default {
         bg: "muted",
       },
     },
+    // Forms
+    label: {
+      color: "text",
+      fontWeight: "500",
+      display: "block",
+    },
+    // Nav Link
     navlink: {
       color: "primary",
       textDecoration: "none",
@@ -106,7 +113,7 @@ export default {
       borderColor: "primary",
       borderRadius: "1em",
       py: 2,
-      px: [3, 4, 5],
+      px: [3, 4],
       m: 1,
       fontSize: [3, 4],
       textDecoration: "none",

@@ -3,7 +3,7 @@ import { jsx, Flex, Container, Box } from "theme-ui"
 import Layout from "../components/Layout"
 
 import SEO from "../components/Seo"
-import { FiFile } from "react-icons/fi"
+import Form from "../components/Form"
 
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -45,16 +45,9 @@ export default ({ data }) => (
         I’m always up for a challenge and am happy to discuss any opportunities
         or projects – so let’s talk.
       </p>
-      <Box sx={{ mt: 4, color: "primary" }}>
-        <FiFile />
-        &nbsp;
-        <a
-          href="/andrew-cetnarskyj-oct-19.pdf"
-          title="View the latest CV"
-          sx={{ variant: "styles.navlink" }}
-        >
-          View CV (PDF)
-        </a>
+
+      <Box>
+        <Form />
       </Box>
     </Container>
   </Layout>
