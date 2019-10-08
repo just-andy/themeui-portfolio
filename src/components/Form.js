@@ -9,7 +9,6 @@ const Form = () => {
         <legend sx={{ variant: "styles.h2" }}>Get in Touch</legend>
         <form
           name="contact"
-          action="/success/"
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
