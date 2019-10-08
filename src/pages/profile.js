@@ -37,15 +37,19 @@ export default ({ data }) => (
         remote and in-house teams all the while championing UX with changing
         leadership.
       </p>
-      <p></p>After a long time away, it was time to return home with my wife and son
-      into the growing tech scene in Scotland. I'm now fortunate enough to be
-      focused on building out the design system for Wood Mackenzie, one of the
-      world's leading energy consultancies.</p>
-      <p>Throughout my career, I've always
-      loved the technical side of digital design. I continue to build out small
-      sites and side projects to keep my skills on point; you are more likely to
-      find me in Github that Dribbble. Thanks for taking the time to check out
-      my work, if you would like to discuss a project, please get in touch.</p>
+      <p>
+        After a long time away, it was time to return home with my wife and son
+        into the growing tech scene in Scotland. I'm now fortunate enough to be
+        focused on building out the design system for Wood Mackenzie, one of the
+        world's leading energy consultancies.
+      </p>
+      <p>
+        Throughout my career, I've always loved the technical side of digital
+        design. I continue to build out small sites and side projects to keep my
+        skills on point; you are more likely to find me in Github that Dribbble.
+        Thanks for taking the time to check out my work, if you would like to
+        discuss a project, please get in touch.
+      </p>
       <Box>
         <Form />
       </Box>
