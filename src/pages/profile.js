@@ -18,6 +18,7 @@ export default ({ data }) => (
       <Flex sx={{ alignItems: "center", my: 2 }}></Flex>
       <h1>A bit more about me</h1>
       <Img
+        sx={{ mb: 4 }}
         fluid={data.file.childImageSharp.fluid}
         sizes={{ ...data.file.childImageSharp.fluid, aspectRatio: 21 / 9 }}
         alt="Family photo"
