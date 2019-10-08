@@ -14,12 +14,12 @@ const Form = () => {
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
-          <input name="bot-field" />
+          <input type="hidden" name="bot-field" />
 
           <Label htmlFor="name">Your Name: </Label>
           <Input id="name" name="name" placeholder="John Doe" />
 
-          <Label htmlFor="email">Your Name: </Label>
+          <Label htmlFor="email">Your Email: </Label>
           <Input
             type="email"
             id="email"
