@@ -122,6 +122,10 @@ export default {
         color: "#fff",
         textDecoration: "none",
       },
+      '&.active': {
+        backgroundColor: "primary",
+        color: "#fff",
+      },
     },
     code: {
       fontFamily: "monospace",
