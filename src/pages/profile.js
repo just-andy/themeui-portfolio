@@ -16,36 +16,41 @@ export default ({ data }) => (
     />
     <Container>
       <Flex sx={{ alignItems: "center", my: 2 }}></Flex>
-      <h1>About Andy</h1>
-
+      <h1>A bit more about me</h1>
       <Img
+        sx={{ mb: 4 }}
         fluid={data.file.childImageSharp.fluid}
         sizes={{ ...data.file.childImageSharp.fluid, aspectRatio: 21 / 9 }}
         alt="Family photo"
         title="Photo"
       />
-
       <p>
-        Please feel free to explore and find out what I’ve done for businesses
-        big and small – and what I could do for you too. I won’t bore you with
-        personal stuff – this is all about the work. However, some kind of
-        potted CV is in order. So here goes:
+        A bit more about me After completing an Honours Degree in Consumer
+        Product Design, I started freelancing in Web Design and paid my dues to
+        a few agencies. Remember IE6 bug's and designing with tables... yes I
+        did that.
       </p>
       <p>
-        I have over 16 years’ experience with a wide variety of online projects
-        (including seven years in online gaming/sports/betting sector). You’ll
-        find a snapshot of them here.
+        I was fortunate enough to land a role based in Gibraltar with William
+        Hill, one of the UK's largest bookmakers. During my eight years, I
+        worked my way up to the Sportsbook UX Lead. My time in the Med allowed
+        me to make significant strides in my career. Building teams, managing in
+        remote and in-house teams all the while championing UX with changing
+        leadership.
       </p>
       <p>
-        I love problem-solving UX/customer challenges; preferably working
-        alongside product and dev teams - although I’m more than happy to fly
-        solo if need be.
+        After a long time away, it was time to return home with my wife and son
+        into the growing tech scene in Scotland. I'm now fortunate enough to be
+        focused on building out the design system for Wood Mackenzie, one of the
+        world's leading energy consultancies.
       </p>
       <p>
-        I’m always up for a challenge and am happy to discuss any opportunities
-        or projects – so let’s talk.
+        Throughout my career, I've always loved the technical side of digital
+        design. I continue to build out small sites and side projects to keep my
+        skills on point; you are more likely to find me in Github that Dribbble.
+        Thanks for taking the time to check out my work, if you would like to
+        discuss a project, please get in touch.
       </p>
-
       <Box>
         <Form />
       </Box>

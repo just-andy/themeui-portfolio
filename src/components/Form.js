@@ -9,16 +9,18 @@ const Form = () => {
         <legend sx={{ variant: "styles.h2" }}>Get in Touch</legend>
         <form
           name="contact"
-          action="/success"
+          action="/success/"
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
           <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
+
           <Label htmlFor="name">Your Name: </Label>
           <Input id="name" name="name" placeholder="John Doe" />
 
-          <Label htmlFor="email">Your Name: </Label>
+          <Label htmlFor="email">Your Email: </Label>
           <Input
             type="email"
             id="email"
