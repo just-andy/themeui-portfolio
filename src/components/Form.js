@@ -21,7 +21,7 @@ const Form = () => {
           <Input id="name" name="name" placeholder="John Doe" />
 
           <Label htmlFor="email">Your Email: </Label>
-c          <Input
+         <Input
             type="email"
             id="email"
             name="email"
