@@ -2,14 +2,11 @@
 import { jsx, Container } from "theme-ui"
 import Layout from "../components/Layout"
 
+import Casestudies from "../components/CaseStudies"
 
-import Grid from "../components/elements/Grid"
-import Card from "../components/elements/Card"
 import { Link } from "gatsby"
 
-export default  () => (
-
-
+export default () => (
   <Layout>
     <Container>
       <h1
@@ -26,12 +23,8 @@ export default  () => (
         Andy is a Senior Product Designer from Auld Reekie*
       </h1>
 
-      <Grid>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </Grid>
+      <h2>Case Studies</h2>
+      <Casestudies />
     </Container>
 
     <article>
@@ -73,4 +66,3 @@ export default  () => (
     </article>
   </Layout>
 )
-

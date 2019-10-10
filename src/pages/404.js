@@ -8,20 +8,20 @@ import { Link } from "gatsby"
 export default ({ data }) => (
   <Layout>
     <SEO
-      title="Got your mail"
-      description="I've received your mail and will be in touch soon."
+      title="404 Page"
+      description="Sorry, it looks like you found a broken page."
     />
     <Container>
-      <Flex sx={{ alignItems: "center", my: 2 }}>
+      <Flex sx={{ alignItems: "center", justifyContent: "center", my: 2 }}>
         <Box>
-          <h1>Got your mail</h1>
+          <h1>Oops something has gone wrong</h1>
           <p>
-            Thanks for dropping me a email, I will get back to you as soon as
-            possible.
+            Sorry, it looks like something hasn't went to plan. Maybe the link
+            is old or has been update.
           </p>
           <Box sx={{ pt: [2, 4] }}>
             <Link to="/" sx={{ variant: "styles.hollow" }}>
-              Back to the homepage
+              Head to the homepage
             </Link>
           </Box>
         </Box>
