@@ -1,37 +1,39 @@
 import React from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
+import {Link, useStaticQuery, graphql } from "gatsby"
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query Studies {
-        allMdx {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                featureImage
-              }
-            }
+
+export default () => {
+  const data = useStaticQuery(graphql`
+  {
+    allMdx {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            title
+          }
+          fields {
+            slug
           }
         }
       }
-    `}
-    render={data => (
-      <div>
-        <h1>Awesome MDX Blog</h1>
-        <ul>
-          <li>
-            <Link to={data.edges.node.fields.slug}>
-              <h2>{data.edges.node.frontmatter.title}</h2>
-            </Link>
-            <p>{data.edges.node.excerpt}</p>
-          </li>
-        </ul>
-      </div>
-    )}
-  />
-)
+    }
+  }
+  `)
+
+  // Clean up the data
+  const { edges: posts } = data.allMdx
+
+  return (
+    <header>
+       {posts.map(({ node: post }) => (
+         <li id={post.id}>
+      <h1>{post.frontmatter.title}</h1>
+      <p>{post.excerpt}</p>
+      <Link to={post.fields.slug} >Read more </Link>
+      </li>
+  ))}
+    </header>
+  )
+}
