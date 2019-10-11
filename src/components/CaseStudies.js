@@ -1,39 +1,42 @@
 import React from "react"
-import {Link, useStaticQuery, graphql } from "gatsby"
-
+import { useStaticQuery, graphql } from "gatsby"
+import Grid from "../components/elements/Grid"
+import Card from "../components/elements/Card"
 
 export default () => {
   const data = useStaticQuery(graphql`
-  {
-    allMdx {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            title
-          }
-          fields {
-            slug
+    {
+      allMdx {
+        edges {
+          node {
+            id
+            excerpt(pruneLength: 100)
+            frontmatter {
+              title
+              featureImage
+            }
+            fields {
+              slug
+            }
           }
         }
       }
     }
-  }
   `)
 
   // Clean up the data
   const { edges: posts } = data.allMdx
 
   return (
-    <header>
-       {posts.map(({ node: post }) => (
-         <li id={post.id}>
-      <h1>{post.frontmatter.title}</h1>
-      <p>{post.excerpt}</p>
-      <Link to={post.fields.slug} >Read more </Link>
-      </li>
-  ))}
-    </header>
+    <Grid>
+      {posts.map(({ node: post }) => (
+        <Card
+          id={post.id}
+          title={post.frontmatter.title}
+          excerpt={post.excerpt}
+          slug={post.fields.slug}
+        />
+      ))}
+    </Grid>
   )
 }

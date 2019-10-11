@@ -105,6 +105,11 @@ export default {
       fontWeight: "500",
       display: "block",
     },
+    forms: {
+      label: {
+        py: 2,
+      },
+    },
     // Nav Link
     navlink: {
       color: "primary",
@@ -130,7 +135,7 @@ export default {
         color: "#fff",
         textDecoration: "none",
       },
-      '&.active': {
+      "&.active": {
         backgroundColor: "primary",
         color: "#fff",
       },

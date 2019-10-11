@@ -23,7 +23,6 @@ export default () => (
         Andy is a Senior Product Designer from Auld Reekie*
       </h1>
 
-      <h2>Case Studies</h2>
       <Casestudies />
     </Container>
 
