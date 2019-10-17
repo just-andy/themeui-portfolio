@@ -1,9 +1,6 @@
 /** @jsx jsx */
 import { jsx, Container } from "theme-ui"
 import Layout from "../components/Layout"
-
-import Casestudies from "../components/CaseStudies"
-
 import { Link } from "gatsby"
 
 export default () => (
@@ -23,7 +20,6 @@ export default () => (
         Andy is a Senior Product Designer from Auld Reekie*
       </h1>
 
-      <Casestudies />
     </Container>
 
     <article>
