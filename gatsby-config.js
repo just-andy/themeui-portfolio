@@ -7,11 +7,6 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-
-    "gatsby-plugin-theme-ui",
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,13 +15,12 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "case_studies",
-        path: `${__dirname}/content/case_studies/`
-      }
+        name: `posts`,
+        path: `src/posts`,
+      },
     },
-    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -36,7 +30,12 @@ module.exports = {
         ],
         display: "swap"
       }
-    }
+    },
+    "gatsby-plugin-theme-ui",
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-mdx`,
   ],
   siteMetadata: {
     title: "Andrew Cetnarskyj",
