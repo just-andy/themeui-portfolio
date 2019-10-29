@@ -2,7 +2,7 @@
 import { jsx, Styled } from "theme-ui"
 import { Link } from "gatsby"
 
-const Card = ({ id, title, slug, excerpt, image }) => (
+const Card = ({ id, title, slug, excerpt }) => (
   <article
     id={id}
     sx={{

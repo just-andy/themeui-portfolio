@@ -3,6 +3,8 @@ import { jsx, Container } from "theme-ui"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
 
+import Casestudies from "../components/Casestudies"
+
 export default () => (
   <Layout>
     <Container>
@@ -20,7 +22,11 @@ export default () => (
         Andy is a Senior Product Designer from Auld Reekie*
       </h1>
 
+      <Casestudies />
+
     </Container>
+
+    
 
     <article>
       <Container>
