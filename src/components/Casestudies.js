@@ -16,7 +16,7 @@ const Casestudies = ({data}) => {
     return (
         <Grid>
             {posts.map(({node:post}) => (
-                 <Card id={post.id} title={post.frontmatter.title} slug={post.frontmatter.slug} excerpt={post.excerpt} />
+                 <Card id={post.id} img={post.frontmatter.featuredImage.childImageSharp.fluid} title={post.frontmatter.title} slug={post.frontmatter.slug} excerpt={post.excerpt} />
             ))}
         </Grid>
     )
@@ -26,26 +26,25 @@ export default Casestudies
 
 export const pageQuery = graphql`
 query caseIndex {
-    allMdx {
-      edges {
-        node {
-            excerpt
-            id
-          frontmatter {
-            title
-            slug
-            category
-            featuredImage {
-              childImageSharp {
-                fluid {
-                  src
-                }
+  allMdx {
+    edges {
+      node {
+        excerpt
+        id
+        frontmatter {
+          title
+          slug
+          category
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid_tracedSVG
               }
-            
             }
           }
         }
       }
     }
   }
+}
 `
