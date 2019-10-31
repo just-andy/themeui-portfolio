@@ -35,7 +35,20 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              sizeByPixelDensity: true,
+            },
+          },
+        ],
+      },
+    },
   ],
   siteMetadata: {
     title: "Andrew Cetnarskyj",

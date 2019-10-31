@@ -11,7 +11,6 @@ export default function PageTemplate({ data: { mdx } }) {
     <Layout>
       <SEO
         title={mdx.frontmatter.title}
-        description={mdx.frontmatter.description}
       />
       <Img fluid={mdx.frontmatter.featuredImage.childImageSharp.fluid} />
 
