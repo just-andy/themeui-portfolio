@@ -23,10 +23,7 @@ export default () => (
       </h1>
 
       <Casestudies />
-
     </Container>
-
-    
 
     <article>
       <Container>
@@ -59,7 +56,7 @@ export default () => (
           </p>
         </div>
         <footer>
-          <Link to="/profile" sx={{ variant: "styles.navlink" }}>
+          <Link to="/profile" sx={{ variant: "styles.hollow" }}>
             A longer profile...
           </Link>
         </footer>

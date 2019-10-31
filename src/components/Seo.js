@@ -29,6 +29,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <meta name="description" content={seo.description} />
+            <meta name="keywords" content="Andrew Cetnarskyj, Just-Andy, Porftolio, UX design, Case Studies, Product Design" />
             <meta name="image" content={seo.image} />
             {seo.url && <meta property="og:url" content={seo.url} />}
             {(article ? true : null) && (

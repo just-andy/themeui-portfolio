@@ -16,7 +16,7 @@ const Casestudies = ({data}) => {
     return (
         <Grid>
             {posts.map(({node:post}) => (
-                 <Card id={post.id} img={post.frontmatter.featuredImage.childImageSharp.fluid} title={post.frontmatter.title} slug={post.frontmatter.slug} excerpt={post.excerpt} />
+                 <Card id={post.id} img={post.frontmatter.featuredImage.childImageSharp.fluid} title={post.frontmatter.title} slug={post.frontmatter.slug} excerpt={post.frontmatter.description} />
             ))}
         </Grid>
     )
@@ -35,6 +35,7 @@ query caseIndex {
           title
           slug
           category
+          description
           featuredImage {
             childImageSharp {
               fluid(maxWidth: 700) {

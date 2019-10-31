@@ -107,7 +107,7 @@ export default {
     },
     forms: {
       label: {
-        py: 2,
+        py: 4,
       },
     },
     // Nav Link
