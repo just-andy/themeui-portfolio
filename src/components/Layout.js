@@ -7,7 +7,7 @@ import {
   Main,
 } from "theme-ui"
 import { Global, css } from "@emotion/core"
-import emotionNormalize from 'emotion-normalize';
+import emotionNormalize from "emotion-normalize"
 import theme from "../theme"
 import { Helmet } from "react-helmet"
 
@@ -19,16 +19,8 @@ export default props => (
     <Styled.root>
       <Global
         styles={css`
-        ${emotionNormalize}
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          background: white;
-          min-height: 100%;
-          font-family: Helvetica, Arial, sans-serif;
-        }
-      `}
+          ${emotionNormalize}
+        `}
       />
       <Helmet>
         <meta charSet="utf-8" />
