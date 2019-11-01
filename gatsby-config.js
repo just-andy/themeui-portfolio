@@ -11,8 +11,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`
-      }
+        path: `${__dirname}/src/images/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -26,10 +26,10 @@ module.exports = {
       options: {
         fonts: [
           `Work Sans`,
-          `400` // you can also specify font weights and styles
+          `400`, // you can also specify font weights and styles
         ],
-        display: "swap"
-      }
+        display: "swap",
+      },
     },
     "gatsby-plugin-theme-ui",
     `gatsby-plugin-react-helmet`,
@@ -43,7 +43,6 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 960,
-              sizeByPixelDensity: true,
             },
           },
         ],
@@ -57,6 +56,6 @@ module.exports = {
       "Andrew Cetnarskyj is a Senior UX designer based in Edinburgh and currently building design systems at Wood Mackenzie.",
     url: "https://www.andrewcetnarskyj.co.uk", // No trailing slash allowed!
     image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@just-andy"
-  }
-};
+    twitterUsername: "@just-andy",
+  },
+}

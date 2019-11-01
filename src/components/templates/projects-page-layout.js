@@ -9,9 +9,7 @@ import Img from "gatsby-image"
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
-      <SEO
-        title={mdx.frontmatter.title}
-      />
+      <SEO title={mdx.frontmatter.title} />
       <Img fluid={mdx.frontmatter.featuredImage.childImageSharp.fluid} />
 
       <Container>

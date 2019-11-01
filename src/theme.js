@@ -124,7 +124,7 @@ export default {
       borderWidth: "2px",
       borderStyle: "solid",
       borderColor: "primary",
-      borderRadius: "1em",
+      borderRadius: "0.25em",
       py: 2,
       px: [3, 4],
       m: 1,
