@@ -100,13 +100,14 @@ export default {
       },
     },
     // Forms
-    label: {
-      color: "text",
-      fontWeight: "500",
-      display: "block",
-    },
     forms: {
+      input: {
+        color: "primary",
+      },
       label: {
+        color: "primary",
+        fontWeight: "500",
+        display: "block",
         py: 4,
       },
     },

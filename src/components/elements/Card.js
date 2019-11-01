@@ -3,7 +3,7 @@ import { jsx, Styled } from "theme-ui"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
-const Card = ({ id, title, slug, excerpt,img }) => (
+const Card = ({ id, title, slug, excerpt, img }) => (
   <article
     id={id}
     sx={{
@@ -12,9 +12,8 @@ const Card = ({ id, title, slug, excerpt,img }) => (
     }}
   >
     <Link to={slug}>
-      <Img fluid={img} title={title} alt="Project Thumbnail"/>
+      <Img fluid={img} title={title} alt="Project Thumbnail" />
     </Link>
-    
 
     <div sx={{ p: [2, 3] }}>
       <Styled.h3>

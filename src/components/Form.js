@@ -20,15 +20,19 @@ const Form = () => {
           <Label htmlFor="name">Your Name: </Label>
           <Input id="name" name="name" placeholder="John Doe" />
 
-          <Label htmlFor="email">Your Email: </Label>
-         <Input
+          <Label sx={{ mt: 3 }} htmlFor="email">
+            Your Email:{" "}
+          </Label>
+          <Input
             type="email"
             id="email"
             name="email"
             placeholder="john@acme.com"
           />
 
-          <Label htmlFor="subject[]">Subject: </Label>
+          <Label sx={{ mt: 3 }} htmlFor="subject[]">
+            Subject:{" "}
+          </Label>
 
           <Select name="subject[]" id="subject" defaultValue="General Enquiry">
             <option>General Enquiry</option>
@@ -36,7 +40,9 @@ const Form = () => {
             <option>Other Opportunity</option>
           </Select>
 
-          <Label htmlFor="message">Your Name: </Label>
+          <Label sx={{ mt: 3 }} htmlFor="message">
+            Your Name:{" "}
+          </Label>
           <Textarea name="message" />
 
           <Box sx={{ pt: 4 }}>

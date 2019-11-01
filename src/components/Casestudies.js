@@ -16,7 +16,7 @@ const Casestudies = ({data}) => {
     return (
         <Grid>
             {posts.map(({node:post}) => (
-                 <Card id={post.id} img={post.frontmatter.featuredImage.childImageSharp.fluid} title={post.frontmatter.title} slug={post.frontmatter.slug} excerpt={post.frontmatter.description} />
+                 <Card key={post.id} img={post.frontmatter.featuredImage.childImageSharp.fluid} title={post.frontmatter.title} slug={post.frontmatter.slug} excerpt={post.frontmatter.description} />
             ))}
         </Grid>
     )
