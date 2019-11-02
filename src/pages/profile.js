@@ -24,6 +24,7 @@ export default ({ data }) => (
         alt="Family photo"
         title="Photo"
       />
+      <h2>The Backstory</h2>
       <p>
         A bit more about me After completing an Honours Degree in Consumer
         Product Design, I started freelancing in Web Design and paid my dues to
@@ -38,6 +39,7 @@ export default ({ data }) => (
         remote and in-house teams all the while championing UX with changing
         leadership.
       </p>
+      <h2>Back home</h2>
       <p>
         After a long time away, it was time to return home with my wife and son
         into the growing tech scene in Scotland. I'm now fortunate enough to be
@@ -51,6 +53,7 @@ export default ({ data }) => (
         Thanks for taking the time to check out my work, if you would like to
         discuss a project, please get in touch.
       </p>
+      <p> My full career history is on <a title="Linked In Profile" sx={{variant: "styles.navlink"}} href="https://www.linkedin.com/in/andrewcetnarskyj/">Linked In</a> or you can dowload my <a title="Latest CV" sx={{variant: "styles.navlink"}}   href="/andrew-cetnarskyj-oct-19.pdf">most recent resume.</a></p>
       <Box>
         <Form />
       </Box>

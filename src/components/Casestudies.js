@@ -26,7 +26,7 @@ export default Casestudies
 
 export const pageQuery = graphql`
 query caseIndex {
-  allMdx {
+  allMdx(sort: {order: ASC, fields: frontmatter___order}) {
     edges {
       node {
         excerpt
@@ -34,11 +34,11 @@ query caseIndex {
         frontmatter {
           title
           slug
-          category
+          order
           description
           featuredImage {
             childImageSharp {
-              fluid(maxWidth: 700) {
+              fluid(maxWidth: 960) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
