@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container } from "theme-ui"
+import { jsx, Container, Flex } from "theme-ui"
 import Layout from "../Layout"
 import SEO from "../Seo"
 import { graphql, Link } from "gatsby"
@@ -13,14 +13,17 @@ export default function PageTemplate({ data: { mdx } }) {
         title={mdx.frontmatter.title}
         description={mdx.frontmatter.description}
       />
-      <Img fluid={mdx.frontmatter.featuredImage.childImageSharp.fluid} />
+      <Img sx={{mt:[3,4]}} fluid={mdx.frontmatter.featuredImage.childImageSharp.fluid} />
 
       <Container>
         <h1>{mdx.frontmatter.title}</h1>
         <MDXRenderer>{mdx.body}</MDXRenderer>
-        <Link sx={{ variant: "styles.hollow" }} to="/">
-          Back to home
-        </Link>
+        <Flex sx={{my:2, justifyContent: "center", alignContent: "center" }}>
+            <Link sx={{ variant: "styles.hollow" }} to="/">
+            Back to home
+            </Link>
+        </Flex>
+        
       </Container>
     </Layout>
   )

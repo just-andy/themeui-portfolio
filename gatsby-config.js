@@ -57,6 +57,7 @@ module.exports = {
   ],
   siteMetadata: {
     title: "Andrew Cetnarskyj",
+    siteUrl: `http://just-andy.netlify.com/.`,
     titleTemplate: "%s · Andrew Cetnarskyj",
     description:
       "Andrew Cetnarskyj is a Senior UX designer based in Edinburgh and currently building design systems at Wood Mackenzie.",

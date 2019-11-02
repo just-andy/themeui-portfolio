@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container } from "theme-ui"
+import { jsx, Container, Flex } from "theme-ui"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
 
@@ -55,10 +55,12 @@ export default () => (
             opportunities or projects – so let's talk.
           </p>
         </div>
-        <footer>
+        <footer >
+        <Flex sx={{my:2, justifyContent: "center", alignContent: "center" }}>
           <Link to="/profile" sx={{ variant: "styles.hollow" }}>
             A longer profile...
           </Link>
+          </Flex>
         </footer>
       </Container>
     </article>

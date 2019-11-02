@@ -28,7 +28,6 @@ export default props => (
       </Helmet>
 
       <DefaultLayout>
-        <Global />
         <Header />
         <Main>{props.children}</Main>
         <Footer />

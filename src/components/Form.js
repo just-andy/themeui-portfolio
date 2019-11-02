@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box } from "theme-ui"
+import { jsx, Box, Flex } from "theme-ui"
 import { Label, Input, Select, Textarea } from "@rebass/forms"
 
 const Form = () => {
@@ -45,16 +45,17 @@ const Form = () => {
           </Label>
           <Textarea name="message" />
 
-          <Box sx={{ pt: 4 }}>
+          <Flex sx={{ pt: 4, justifyContent: "center", alignContent: "center"  }}>
             <button
               sx={{
                 variant: "styles.hollow",
+                backgroundColor: "colors.background"
               }}
               type="submit"
             >
               Send Message
             </button>
-          </Box>
+          </Flex>
         </form>
       </fieldset>
     </Box>
