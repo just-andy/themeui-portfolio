@@ -16,7 +16,7 @@ export default ({ data }) => (
     />
     <Container>
       <Flex sx={{ alignItems: "center", my: 2 }}></Flex>
-      <h1>A bit more about me</h1>
+      <h1 sx={{variant:"styles.h2"}}>The Backstory</h1>
       <Img
         sx={{ mb: 4 }}
         fluid={data.file.childImageSharp.fluid}
@@ -24,7 +24,6 @@ export default ({ data }) => (
         alt="Family photo"
         title="Photo"
       />
-      <h2>The Backstory</h2>
       <p>
         A bit more about me After completing an Honours Degree in Consumer
         Product Design, I started freelancing in Web Design and paid my dues to
@@ -39,7 +38,7 @@ export default ({ data }) => (
         remote and in-house teams all the while championing UX with changing
         leadership.
       </p>
-      <h2>Back home</h2>
+      <h2 sx={{variant:"styles.h3"}}>Back home</h2>
       <p>
         After a long time away, it was time to return home with my wife and son
         into the growing tech scene in Scotland. I'm now fortunate enough to be

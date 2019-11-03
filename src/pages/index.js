@@ -28,7 +28,7 @@ export default () => (
     <article>
       <Container>
         <header>
-          <h2>A bit more about me</h2>
+          <h2 sx={{variant:"styles.h2"}}>A bit more about me</h2>
         </header>
         <div>
           <p>

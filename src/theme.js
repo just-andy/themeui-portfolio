@@ -55,7 +55,7 @@ export default {
     },
     h3: {
       ...heading,
-      fontSize: 3,
+      fontSize: 5,
     },
     h4: {
       ...heading,
