@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Footer, Flex, Container, Box } from "theme-ui"
+import { jsx, Footer, Flex, Container } from "theme-ui"
 import {
   FiTwitter,
   FiInstagram,

@@ -6,6 +6,15 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Andrew Cetnarskyj",
+    siteUrl: `http://just-andy.netlify.com`,
+    titleTemplate: "%s · Andrew Cetnarskyj",
+    description:
+      "Andrew Cetnarskyj is a Senior UX designer based in Edinburgh and currently building design systems at Wood Mackenzie.",
+    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@just-andy",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -36,6 +45,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/success`]
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-images`],
@@ -54,15 +69,5 @@ module.exports = {
         ],
       },
     },
-  ],
-  siteMetadata: {
-    title: "Andrew Cetnarskyj",
-    siteUrl: `http://just-andy.netlify.com/.`,
-    titleTemplate: "%s · Andrew Cetnarskyj",
-    description:
-      "Andrew Cetnarskyj is a Senior UX designer based in Edinburgh and currently building design systems at Wood Mackenzie.",
-    url: "https://www.andrewcetnarskyj.co.uk", // No trailing slash allowed!
-    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@just-andy",
-  },
+  ]
 }
