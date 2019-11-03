@@ -47,15 +47,15 @@ export default {
     },
     h1: {
       ...heading,
-      fontSize: 7,
+      fontSize: [5,7],
     },
     h2: {
       ...heading,
-      fontSize: 6,
+      fontSize: [4,6],
     },
     h3: {
       ...heading,
-      fontSize: 5,
+      fontSize: [3,5],
     },
     h4: {
       ...heading,
