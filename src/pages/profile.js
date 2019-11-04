@@ -48,7 +48,7 @@ export default ({ data }) => (
       <p>
         Throughout my career, I've always loved the technical side of digital
         design. I continue to build out small sites and side projects to keep my
-        skills on point; you are more likely to find me in Github that Dribbble.
+        skills on point; you are more likely to find me in <a href="https://codesandbox.io/u/just-andy" target="_blank" title="Andy Centarksyj Codesandbox profile." rel="me">Codesandbox</a> that Dribbble.
         Thanks for taking the time to check out my work, if you would like to
         discuss a project, please get in touch.
       </p>
