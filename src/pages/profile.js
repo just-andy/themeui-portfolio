@@ -48,11 +48,11 @@ export default ({ data }) => (
       <p>
         Throughout my career, I've always loved the technical side of digital
         design. I continue to build out small sites and side projects to keep my
-        skills on point; you are more likely to find me in <a href="https://codesandbox.io/u/just-andy" target="_blank" title="Andy Centarksyj Codesandbox profile." rel="me">Codesandbox</a> that Dribbble.
+        skills on point; you are more likely to find me in <a href="https://codesandbox.io/u/just-andy" target="_blank" title="Andy Centarksyj Codesandbox profile." rel="me noopener noreferrer">Codesandbox</a> that Dribbble.
         Thanks for taking the time to check out my work, if you would like to
         discuss a project, please get in touch.
       </p>
-      <p> My full career history is on <a title="Linked In Profile" sx={{variant: "styles.navlink"}} href="https://www.linkedin.com/in/andrewcetnarskyj/">Linked In</a> or you can dowload my <a title="Latest CV" sx={{variant: "styles.navlink"}}   href="/andrew-cetnarskyj-oct-19.pdf">most recent resume.</a></p>
+      <p> My full career history is on <a title="Linked In Profile" sx={{variant: "styles.navlink"}} target="_blank" rel="me noopener noreferrer" href="https://www.linkedin.com/in/andrewcetnarskyj/">Linked In</a> or you can dowload my <a title="Latest CV" sx={{variant: "styles.navlink"}}   href="/andrew-cetnarskyj-oct-19.pdf">most recent resume.</a></p>
       <Box>
         <Form />
       </Box>
