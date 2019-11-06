@@ -13,27 +13,27 @@ export default function PageTemplate({ data: { mdx } }) {
         title={mdx.frontmatter.title}
         description={mdx.frontmatter.description}
       />
-      <Img sx={{mt:[3,4]}} fluid={mdx.frontmatter.featuredImage.childImageSharp.fluid} />
+      <Img
+        sx={{ mt: [3, 4] }}
+        fluid={mdx.frontmatter.featuredImage.childImageSharp.fluid}
+      />
 
       <Container>
         <h1>{mdx.frontmatter.title}</h1>
         <MDXRenderer>{mdx.body}</MDXRenderer>
-        <Flex sx={{my:2, justifyContent: "center", alignContent: "center" }}>
-            <Link sx={{ variant: "styles.hollow" }} to="/">
+        <Flex sx={{ my: 2, justifyContent: "center", alignContent: "center" }}>
+          <Link sx={{ variant: "styles.hollow" }} to="/">
             Back to home
-            </Link>
+          </Link>
         </Flex>
-        
       </Container>
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query projectQuery($id: String) {
-    mdx(id: { eq: $id }) {
-      id
-      body
+  query projectQuery($slug: String!) {
+    mdx(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
         description
@@ -45,6 +45,7 @@ export const pageQuery = graphql`
           }
         }
       }
+      body
     }
   }
 `

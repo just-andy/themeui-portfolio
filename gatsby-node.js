@@ -30,17 +30,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const result = await graphql(`
     query {
-        allMdx {
-          edges {
-            node {
-              id
-              frontmatter {
-                slug
-              }
+      allMdx {
+        edges {
+          node {
+            id
+            frontmatter {
+              slug
             }
           }
         }
-      }      
+      }
+    }
   `)
 
   if (result.errors) {
@@ -57,10 +57,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       // (or `node.frontmatter.slug`)
       path: node.frontmatter.slug,
       // This component will wrap our MDX content
-      component: path.resolve(`./src/components/templates/experience-page-layout.js`),
+      component: path.resolve(
+        `./src/components/templates/experience-page-layout.js`
+      ),
       // You can use the values in this context in
       // our page layout component
-      context: { id: node.id },
+      context: { slug: node.frontmatter.slug },
     })
   })
 }
