@@ -24,7 +24,7 @@ const Card = ({ id, title, slug, excerpt, img }) => (
       <p>{excerpt}</p>
       <footer sx={{ mt: 2, fontSize: 2 }}>
         <Link to={slug} sx={{ variant: "styles.navlink" }}>
-          View Case Study
+          Read on...
         </Link>
       </footer>
     </div>

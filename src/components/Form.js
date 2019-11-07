@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Flex } from "theme-ui"
-import { Label, Input, Select, Textarea } from "@rebass/forms"
+import { Label, Input, Select, Textarea } from "@theme-ui/components"
 
 const Form = () => {
   return (

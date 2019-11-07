@@ -13,10 +13,12 @@ export default function PageTemplate({ data: { mdx } }) {
         title={mdx.frontmatter.title}
         description={mdx.frontmatter.description}
       />
+     
       <Img
         sx={{ mt: [3, 4] }}
         fluid={mdx.frontmatter.featuredImage.childImageSharp.fluid}
       />
+     
 
       <Container>
         <h1>{mdx.frontmatter.title}</h1>
@@ -39,7 +41,7 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1024) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
