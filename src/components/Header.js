@@ -2,7 +2,7 @@
 import { jsx, Header, Flex, Container } from "theme-ui"
 import { Link } from "gatsby"
 
-import Logo from "../images/logo-black-circle.svg"
+import Logo from "../images/just-andy-logo.svg"
 
 export default () => (
   <Header>
@@ -13,7 +13,7 @@ export default () => (
         }}
       >
         <Link to="/" title="Home">
-          <img alt="UI Logo" src={Logo} width="94" height="94" />
+          <img alt="UI Logo" src={Logo} sx={{width:["94px", "128px", "156px"], height:["94px", "128px", "156px"]}} />
           <span
             sx={{
               position: "absolute",

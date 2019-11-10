@@ -86,5 +86,17 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Just Andy`,
+        short_name: `just-andy`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#1fb622`,
+        display: `standalone`,
+        icon: `src/images/just-andy-logo@1x.png`
+      },
+    },
   ]
 }
