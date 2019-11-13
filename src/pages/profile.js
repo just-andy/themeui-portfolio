@@ -25,7 +25,7 @@ export default ({ data }) => (
         title="Photo"
       />
       <p>
-        A bit more about me After completing an Honours Degree in Consumer
+        A bit more about me, after completing an Honours Degree in Consumer
         Product Design, I started freelancing in Web Design and paid my dues to
         a few agencies. Remember IE6 bug's and designing with tables... yes I
         did that.
@@ -48,7 +48,7 @@ export default ({ data }) => (
       <p>
         Throughout my career, I've always loved the technical side of digital
         design. I continue to build out small sites and side projects to keep my
-        skills on point; you are more likely to find me in <a href="https://codesandbox.io/u/just-andy" target="_blank" title="Andy Centarksyj Codesandbox profile." rel="me noopener noreferrer">Codesandbox</a> that Dribbble.
+        skills on point; you are more likely to find me in <a href="https://codesandbox.io/u/just-andy" target="_blank" title="Andy Centarksyj Codesandbox profile." sx={{variant: "styles.navlink"}} rel="me noopener noreferrer">Codesandbox</a> that Dribbble.
         Thanks for taking the time to check out my work, if you would like to
         discuss a project, please get in touch.
       </p>

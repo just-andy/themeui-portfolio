@@ -103,6 +103,7 @@ export default {
     forms: {
       input: {
         color: "primary",
+        backgroundColor: "#fff"
       },
       label: {
         color: "primary",

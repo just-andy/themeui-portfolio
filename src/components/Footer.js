@@ -9,7 +9,11 @@ import {
 } from "react-icons/fi"
 
 
-export default () => (
+const SiteFooter = () => (
+
+  const d = new Date();
+  const thisYear = d.getFullYear();
+  
   <Footer>
     <Container>
       <hr />
@@ -87,8 +91,10 @@ export default () => (
           textAlign: "center",
         }}
       >
-        &copy; 2019 Andrew Cetnarskyj &middot; * Auld Reekie = Edinburgh
+        &copy; {thisYear} Andrew Cetnarskyj &middot; * Auld Reekie = Edinburgh
       </Flex>
     </Container>
   </Footer>
 )
+
+export default SiteFooter
