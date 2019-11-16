@@ -11,8 +11,6 @@ import {
 
 const SiteFooter = () => (
 
-  const d = new Date();
-  const thisYear = d.getFullYear();
   
   <Footer>
     <Container>
@@ -91,7 +89,7 @@ const SiteFooter = () => (
           textAlign: "center",
         }}
       >
-        &copy; {thisYear} Andrew Cetnarskyj &middot; * Auld Reekie = Edinburgh
+        &copy; 2019 Andrew Cetnarskyj &middot; * Auld Reekie = Edinburgh
       </Flex>
     </Container>
   </Footer>
