@@ -31,9 +31,62 @@ export default {
     secondary: "#cff0c5",
     accent: "text",
     muted: "#f7f8fc",
-    dark: "text",
-    light: "white",
+    dark: "#222222",
+    light: "#ffffff",
   },
+  // Buttons
+  buttons: {
+    primary: {
+      color: "primary",
+      borderWidth: "2px",
+      borderStyle: "solid",
+      borderColor: "primary",
+      borderRadius: "0.25em",
+      backgroundColor: "light",
+      cursor:"pointer",
+      '&:hover': {
+        bg: 'text',
+      }
+    },
+    secondary: {
+      color: 'background',
+      bg: 'secondary',
+    },
+  },
+  // Forms
+  forms: {
+    label: {
+      fontSize: 3,
+      fontWeight: 'bold',
+      mt:[2,3]
+    },
+    input: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+        mb: 2
+      },
+    },
+    select: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+    textarea: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+  },
+  // Styles
   styles: {
     root: {
       fontFamily: "body",
@@ -82,34 +135,6 @@ export default {
       overflowX: "auto",
       code: {
         color: "inherit",
-      },
-    },
-    // Buttons
-    buttons: {
-      primary: {
-        color: "light",
-        bg: "primary",
-      },
-      secondary: {
-        color: "dark",
-        bg: "secondary",
-      },
-      gray: {
-        color: "background",
-        bg: "muted",
-      },
-    },
-    // Forms
-    forms: {
-      input: {
-        color: "primary",
-        backgroundColor: "#fff"
-      },
-      label: {
-        color: "primary",
-        fontWeight: "500",
-        display: "block",
-        py: 4,
       },
     },
     // Nav Link
