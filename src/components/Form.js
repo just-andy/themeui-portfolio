@@ -5,7 +5,6 @@ import { Label, Input, Select, Textarea, Button } from "@theme-ui/components"
 const Form = () => {
   return (
     <Box  as='form'
-    onSubmit={e => e.preventDefault()}
     name="contact"
           action="/success/"
           method="POST"
