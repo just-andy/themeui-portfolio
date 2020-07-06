@@ -7,13 +7,24 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Andrew Cetnarskyj",
+    title: "Andrew Cetnarskyj's Portfolio and Blog",
+    author: "Andrew Cetnarskyj",
     siteUrl: `http://just-andy.netlify.com`,
     titleTemplate: "%s · Andrew Cetnarskyj",
     description:
       "Andrew Cetnarskyj is a Senior UX designer based in Edinburgh and currently building design systems at Wood Mackenzie.",
     image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@just-andy",
+    social: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/just-andy`,
+      },
+      {
+        name: `GitHub`,
+        url: `https://github.com/just-andy`,
+      },
+    ],
   },
   plugins: [
     {
@@ -24,13 +35,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `experience`,
-        path: `src/experience`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
@@ -38,6 +42,13 @@ module.exports = {
           `400`, // you can also specify font weights and styles
         ],
         display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        // basePath defaults to `/`
+        basePath: `/blog`,
       },
     },
     "gatsby-plugin-theme-ui",
@@ -85,18 +96,6 @@ module.exports = {
           `gatsby-remark-responsive-iframe`
         ],
       },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Just Andy`,
-        short_name: `just-andy`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#1fb622`,
-        display: `standalone`,
-        icon: `src/images/just-andy-logo@1x.png`
-      },
-    },
+    }
   ]
 }
